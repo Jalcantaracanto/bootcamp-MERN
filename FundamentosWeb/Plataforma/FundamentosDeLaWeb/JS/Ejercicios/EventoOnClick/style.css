@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+    font-family: 'Montserrat', sans-serif;
+}
+button:hover{
+    cursor: pointer;
+}
+
+#main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#nav-bar {
+    width: 900px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:mediumaquamarine;
+}
+
+#nav-bar h1 {
+    font-weight: bold;
+    margin-left: 50px;
+    font-size: 30px;
+    color:white;
+}
+
+#search {
+    width: 400px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid rgb(202, 202, 202);
+}
+
+#search[type="text"] {
+    padding-left: 20px;
+}
+
+.btn-login {
+    color:black;
+    font-size: 15px;
+    width: 100px;    
+    height: 35px;
+    margin-right: 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(1, 112, 75);
+    background-color: transparent;
+}
+
+.btn-login:hover {
+    background-color: rgb(1, 112, 75);
+    color:white;
+}
+
+#main-content {
+    display: flex;
+}
+
+.column {
+    display: flex;
+}
+
+.column-left {
+    width: 640px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.column-right {
+    width: 260px;
+}
+
+.main-card-left, .main-card-right {
+    display: flex;
+    border: 2px solid black;
+    margin-top: 40px;
+}
+
+.main-card-left {
+    width: 600px;
+    height: 200px; 
+}
+
+.main-card-right {
+    width: 400px;
+    height:160px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-information-left {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.card-information-right {
+    width: 500px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-left-title {
+    margin-top: 15px;
+    font-weight: normal;
+}
+
+.card-left-p {
+    margin-top: 15px;
+}
+
+.btn-left-likes {
+    margin-top: 30px;
+    width: 100px;
+    height: 35px;
+    background-color: rgb(253, 228, 88);
+    border: 2px solid black;
+    box-shadow: 4px 4px;
+    font-weight: bold;
+}
+
+.information-card-text{
+    padding-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 350px;
+    text-align: justify;
+}
+
+.card-right-title {
+    margin: 15px 0 0 10px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+h1 span {
+    font-weight: bold;
+}
+
+.btn-right {
+    margin-top: 15px;
+    width: 200px;
+    height: 35px;
+    background-color: rgb(101, 216, 72);
+    border: 2px solid black;
+    box-shadow: 4px 4px;
+    font-weight: bold;
+    font-size: 15px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Registro Persona</title>
+    </head>
+    <body >
+        <div id="contenedor">
+            <form action="">
+                <fieldset class="formularioCompleto" style="width: 500px;">
+                    <legend>Registro</legend>
+                    <div>
+                        <label>Ingrese Nombre y Apellido: </label>
+                        <input class="bordes" type="text" placeholder="EJ: Javier Alcántara">
+                    </div>
+                    <div>
+                        <label>Ingrese Edad: </label>
+                        <input class="bordes" type="number">
+                    </div>
+                    <div>
+                        <label>Ingrese País: </label>
+                        <select class="pais" name="pais" id="pais">
+                            <option>Seleccione</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="México">México</option>
+                            <option value="Perú">Perú</option>
+                            <option value="Venezuela">Venezuela</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Ingrese dirección: </label>
+                        <textarea class="bordes" cols="50" rows="2" style="resize: none;"></textarea>
+                    </div>
+                    <div>
+                        <fieldset style="width: 150px;">
+                            <legend class="ingreseGenero">Ingrese Género: </legend>
+                            <div>
+                                <input type="radio" id="masculino" name="sexo" value="masculino">
+                                <label>Hombre</label> 
+                            </div>
+                            <div>
+                                <input type="radio" id="femenino" name="sexo" value="femenino">
+                                <label>Mujer</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="otro" name="sexo" value="masculino">
+                                <label>Otro</label>
+                            </div>
+                    </fieldset>
+                    </div>
+                <div class="boton">
+                    <button type="submit" value="submit">Enviar</button>
+                </div>
+                </fieldset>
+            </form> 
+        </div>
+    </body>
+</html>

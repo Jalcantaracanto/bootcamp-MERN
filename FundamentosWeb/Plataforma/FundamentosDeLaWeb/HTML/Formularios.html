@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- Entrada de texto -->
+        <input type="text" name="first_name"><br>
+        <!-- Entrada de numero -->
+        <input type="number" name="age"><br>
+        <!-- Entrada de password -->
+        <input type="password" name="password"><br>
+        <!-- Entrada de fecha (no compatible con todos los navegadores) -->
+        <input type="date" name="dob"><br>
+        <!-- Entrada de color -->
+        <input type="color" name="text_color"><br>
+        <!-- Entrada de Radio -->
+        <input type="radio" name="font" value="bold" id="bold">
+        <label for="bold"><strong>Negrita</strong></label>
+        <input type="radio" name="font" value="normal" id="normal">
+        <label for="normal">Normal</label><br>
+        <!-- Casilla de Verificación -->
+        <input type="checkbox" name="accept" id="accept">
+        <label for="accept">Estoy de acuerdo</label><br>
+        <!-- Área de Texto -->
+        <textarea name="comment" cols="20" rows="3"></textarea><br>
+        <!-- Seleccionar -->
+        <select name="snack">
+            <option>Almonds</option>
+            <option>Cheese and Crackers</option>
+            <option>Pita and Hummus</option>
+            <option>Pears</option>
+        </select><br>
+    </form>
+    <br><br><br><br><br><br>
+    <label><strong>Formulario Común</strong></label>
+    <br><br>
+    <form action="/process" method="post">
+        <div>
+            <label>Nombre: </label>
+            <input type="text" name="name" 
+            placeholder="Your name..." >
+        </div>
+        <div>
+            <label>Email: </label>
+            <input type="text" name="email" 
+            placeholder="Your email..." >
+        </div>
+        <div>
+            <input type="checkbox" name="offers" 
+            id="offers" checked >
+            <label for="offers">Me gustaría 
+            recibir correos con ofertas.</label>
+        </div>
+        <input type="submit" value="Sign up" >
+    </form>
+</body>
+</html>
