@@ -1,0 +1,14 @@
+#animal {
+    width: 500px;
+    height: auto;
+}
+
+.btn {
+    height: 30px;
+    width: 70px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 4px 4px #222;
+}
