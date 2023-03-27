@@ -1,0 +1,25 @@
+#tituloGrande {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+body {
+    background-color: #121212;
+    color:azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+    margin: 10px;
+}
+
+#contenedor-padre {
+    display: flex;
+}
+
+#contenedor-hijo {
+    
+}

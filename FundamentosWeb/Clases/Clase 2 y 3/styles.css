@@ -1,0 +1,122 @@
+/* DRY */
+/* DONT REPEAT YOURSELF */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar, .library-container {
+    height: 90vh;
+}
+
+.sidebar {
+    width: 311px;
+    background-color: #000000;
+    color: white;
+
+
+}
+.logo.logo {
+    width: 54%;
+    margin: 24px 24px 0 24px;
+}
+.icons-menu{
+    display: flex;
+    align-items: flex-end;
+
+}
+.medium-bar{
+    margin-top: 25px;
+}
+
+.sidebar-botom{
+    margin-top: 100px;
+}
+
+.sidebar-botom a{
+    margin-left: 24px;
+    color: #999999;
+}
+
+.sidebar-botom button{
+    background-color: transparent;
+    border-radius: 500px;
+    margin-top: 40px;
+    display:flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+    word-wrap: break-word;
+    width: 193px;
+}
+
+.img-world.img-world{
+    margin: 0;
+}
+
+.sidebar img {
+    width: 24px;
+    margin: 24px 24px 0 24px;
+}
+
+.library-container {
+    width: -webkit-fill-available;
+    background-color: #1D1D1D;
+}
+
+.navbar {
+    background-color: #080808;
+    height: 65px;
+    border-radius: 0px;
+}
+
+.footer {
+    height: 10vh;
+    background: rgb(171,45,154);
+    background: linear-gradient(90deg, rgba(171,45,154,1) 0%, rgba(133,99,197,1) 35%, rgba(82,153,243,1) 100%);
+
+}
+
+.texto-footer{
+
+}
+
+.texto1 {
+    color: white;
+    font-size: .625rem;
+    margin-block: 0px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+
+}
+
+.texto2 {
+    color: white;
+    margin-block: 0px;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+}
+
+.p{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+}

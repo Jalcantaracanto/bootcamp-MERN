@@ -1,0 +1,18 @@
+.container {
+    width: 900px;
+    height: 700px;
+    margin: 0 auto;
+    background-color: silver;
+    display: flex;
+    align-items: center;
+}
+.col, .col-2 {
+    background-color: blanchedalmond;
+    padding: 10px;
+    font-size: 1.2rem;
+    flex: 1;
+}
+
+.col-2 {
+    flex:2;
+}

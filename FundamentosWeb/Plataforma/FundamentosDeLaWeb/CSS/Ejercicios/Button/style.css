@@ -1,0 +1,43 @@
+#container{
+    margin: 0;
+    padding:0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search, .more, .create {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.search {
+    width: 150px;
+    height: 25px;
+    border: 2px solid #7CC7C8;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    color: #7CC7C8;
+    text-align: center;
+    font-weight: bold;
+}
+
+.more {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 0px;
+    background-color: #00D1B2;
+    color:white;
+    font-size: large;
+}
+
+.create {
+    width: 150px;
+    height: 30px;
+    border: 2px solid black;
+    background-color: #2B78E4;
+    color: white;
+    text-align: center;
+    box-shadow: 2px 2px 0px 0px black;
+}
