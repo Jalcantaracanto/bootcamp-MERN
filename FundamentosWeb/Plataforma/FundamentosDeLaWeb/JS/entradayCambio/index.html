@@ -11,6 +11,14 @@
         <p>Hello, my name is <span id="name"></span></p>
         <input type="text" name="name" placeholder="you name here" oninput="setName(this)" />
 
+        <h1>OnSelect - Example</h1>
+        <select name="food" onchange="pickFood(this)">
+            <option>Pizza</option>
+            <option>Kebabs</option>
+            <option>Sandwich</option>
+            <option>Sushi</option>
+        </select>
+        <button onclick="order()">Order Food</button>
         <script src="script.js"></script>
     </body>
 </html>
