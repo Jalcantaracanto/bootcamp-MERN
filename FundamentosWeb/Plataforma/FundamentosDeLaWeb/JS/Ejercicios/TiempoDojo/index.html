@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather Forecast</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="main-container">
+            <header id="main-header">
+                <div id="content-header">
+                    <div id="title-header">
+                        <h1>DojoWeather</h1>
+                    </div>
+                    <div id="menu-header">
+                        <a href="" onclick="loadingWeather()">Burbank</a>
+                        <a href="" onclick="loadingWeather()">Chicago</a>
+                        <a href="" onclick="loadingWeather()">Dallas</a>
+                    </div>
+                </div>
+            </header>
+            <nav id="main-navbar">
+                <div id="title-navbar">
+                    <h1>San Jose</h1>
+                </div>
+                <div id="menu-navbar">
+                    <p>show temperature in</p>
+                    <select onchange="changeTemp(this)">
+                        <option>°C</option>
+                        <option>°F</option>
+                    </select>
+                </div>
+            </nav>
+            <article id="main-content">
+                <div class="weather-box">
+                    <div class="weather-day">
+                        <p class="day">Today</p>
+                        <img src="assets/some_rain.png" alt="some rain" />
+                        <p class="weather">some rain</p>
+                    </div>
+                    <div class="weather-temp">
+                        <p class="text-red"><span class="number-1 number-red">24</span>°</p>
+                        <p class="text-blue"><span class="number-2 number-blue">18</span>°</p>
+                    </div>
+                </div>
+                <div class="weather-box">
+                    <div class="weather-day">
+                        <p class="day">Tomorrow</p>
+                        <img src="assets/some_sun.png" alt="some rain" />
+                        <p class="weather">some sun</p>
+                    </div>
+                    <div class="weather-temp">
+                        <p class="text-red"><span class="number-3">27</span>°</p>
+                        <p class="text-blue"><span class="number-4">19</span>°</p>
+                    </div>
+                </div>
+                <div class="weather-box">
+                    <div class="weather-day">
+                        <p class="day">Friday</p>
+                        <img src="assets/some_clouds.png" alt="some rain" />
+                        <p class="weather">some clouds</p>
+                    </div>
+                    <div class="weather-temp">
+                        <p class="text-red"><span class="number-5">21</span>°</p>
+                        <p class="text-blue"><span class="number-6">16</span>°</p>
+                    </div>
+                </div>
+                <div class="weather-box">
+                    <div class="weather-day">
+                        <p class="day">Today</p>
+                        <img src="assets/some_sun.png" alt="some rain" />
+                        <p class="weather">some sun</p>
+                    </div>
+                    <div class="weather-temp">
+                        <p class="text-red"><span class="number-7">26</span>°</p>
+                        <p class="text-blue"><span class="number-8">21</span>°</p>
+                    </div>
+                </div>
+            </article>
+            <footer id="cookies">
+                <div class="icon-cookie">
+                    <img src="assets/cookie.png" alt="cookie" />
+                </div>
+                <div class="cookie-text">
+                    <h1>Stop! Cookie time</h1>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="">Read more...</a></p>
+                </div>
+                <div class="cookie-button">
+                    <button onclick="hide()">I Accept</button>
+                </div>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
