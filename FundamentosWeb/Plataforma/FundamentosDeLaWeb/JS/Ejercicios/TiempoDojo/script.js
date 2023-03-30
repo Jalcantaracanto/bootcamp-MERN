@@ -83,3 +83,4 @@ function changeTemp(selector) {
 //         degrees[7].innerText = celciusDegreesMin[3]
 //     }
 // }
+
