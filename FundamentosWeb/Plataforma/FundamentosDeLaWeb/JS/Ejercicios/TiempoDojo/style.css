@@ -6,6 +6,7 @@
 }
 
 #main-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +15,7 @@
 #main-header {
     background-color: rgb(119, 215, 247);
     width: 100%;
+    max-width: 1200px;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -53,7 +55,8 @@
 }
 
 #main-navbar {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -62,6 +65,8 @@
 }
 
 #title-navbar {
+    width: 100%;
+    max-width: 1200px;
     font-size: 25px;
 }
 
@@ -77,9 +82,11 @@
 }
 
 #main-content {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .weather-box {

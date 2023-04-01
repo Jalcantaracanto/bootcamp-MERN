@@ -7,6 +7,8 @@ function hide() {
     element.remove();
 }
 
+// Intento 1, pero no podia tomar mas que el tiempo de 1 caja
+
 // function changeTemp (selector){
 //     console.log(selector.value)
 //     var red = document.querySelector('.number-red')
@@ -27,6 +29,8 @@ function hide() {
 //     }
 // }
 
+// Solución matematica con for e if 
+
 function changeTemp(selector) {
     console.log(selector);
     console.log(selector.value);
@@ -42,6 +46,9 @@ function changeTemp(selector) {
         }
     }
 }
+
+
+// Solución a Mano con Array
 
 // var degrees = [
 //     document.querySelector('.number-1'),
@@ -83,4 +90,3 @@ function changeTemp(selector) {
 //         degrees[7].innerText = celciusDegreesMin[3]
 //     }
 // }
-
