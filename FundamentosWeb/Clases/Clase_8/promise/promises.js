@@ -30,7 +30,7 @@
 //             console.log(response)
 //         })
 //         .catch(function (error) {
-//             console.log(error)
+//             console.log(error.value)
 //         })
 // }
 
@@ -41,60 +41,10 @@
 
 // Pasar funcion de login a ES7 - Async/Await
 
+// 1
 
-
-// document.querySelector('#signup').addEventListener('submit', handleSubmit);
-
-// function handleSubmit(event) {
-//     event.preventDefault();
-//     const inputValue = document.querySelector('#myInput').value;
-//     myAsyncFunction(inputValue);
-// }
-
-
-
-// const userMailInput = document.getElementById('userMailInput').value
-// const userPasswordInput = document.getElementById('userPasswordInput').value
-
-// const isUserExist = new Promise(
-//     async (resolve, reject) => {
-//         var userMailInput = await document.getElementById('userMailInput').value
-//         var userPasswordInput = await document.getElementById('userPasswordInput').value
-//         const userMail = 'javier@gmail.com'
-//         const password = '12345'
-//         if (userMail == userMailInput && password == userPasswordInput) {
-//             const response = {
-//                 message: 'Usuario válido',
-//                 userName: 'Javier Alcántara'
-//             }
-//             resolve(response)
-//         } else {
-//             const reason = {
-//                 message: 'Usuario no válido',
-//                 error: 'User doesnt Exist!'
-//             }
-//             reject(reason)
-//         }
-//     }
-// )
-
-// async function login() {
-//     try {
-//         let response = await isUserExist
-//         console.log(response)
-//     } catch (error) {
-//         console.log(error.message)
-//     }
-// }
-
-// (async () => {
-
-//     await login();
-// })();
-
-const form = document.getElementById('signup');
-
-async function login(){
+async function login(event) {
+    await event.preventDefault()
     const usernameInput = document.querySelector('#userMailInput');
     const username = usernameInput.value;
     const userPasswordInput = document.querySelector('#userPasswordInput');
@@ -102,12 +52,10 @@ async function login(){
 
     try {
         const result = await isUserExist(username, userPassword);
-        console.log(result); 
-
+        console.log(result);
     } catch (error) {
-        console.error('Error al procesar la promesa:', error);
+        console.error(error.value);
     }
-    
     return false
 }
 
@@ -130,3 +78,84 @@ function isUserExist(username, userPassword) {
         }
     })
 }
+
+
+
+// //2
+
+// const form = document.getElementById('signup')
+
+// form.addEventListener('submit', async (event) => {
+//     event.preventDefault()
+//     const userMailInput = document.getElementById('userMailInput')
+//     const userPasswordInput = document.getElementById('userPasswordInput')
+//     const userName = userMailInput.value
+//     const userPassword = userPasswordInput.value
+//     try {
+//         const result = await isUserExist(userName, userPassword)
+//         console.log(result)
+//         userMailInput = document.innerText = ""
+//     } catch (error) {
+//         console.error(error.value)
+//     }
+// })
+
+// function isUserExist(userMailInput, userPasswordInput) {
+//     return new Promise((resolve, reject) => {
+//         const userMail = 'javier@gmail.com'
+//         const userPass = '12345'
+//         if (userMail == userMailInput && userPass == userPasswordInput) {
+//             const response = {
+//                 message: 'Usuario Valido',
+//                 UserName: 'Javier Alcántara'
+//             }
+//             resolve(response)
+//         } else {
+//             const reason = {
+//                 message: 'Usuario Invalido',
+//                 error: 'Usuario no Existe'
+//             }
+//             reject(reason)
+//         }
+//     })
+// }
+
+
+//3
+
+// const isUserExist = (userMailInput, userPasswordInput) => {
+//     return new Promise(function (resolve, reject) {
+//         const userMail = 'javier@gmail.com'
+//         const userPass = '12345'
+//         if (userMail == userMailInput && userPass == userPasswordInput) {
+//             const response = {
+//                 message: 'Usuario Valido',
+//                 UserName: 'Javier Alcántara'
+//             }
+//             resolve(response)
+//         } else {
+//             const reason = {
+//                 message: 'Usuario Invalido',
+//                 error: 'Usuario no Existe'
+//             }
+//             reject(reason)
+//         }
+//     })
+// }
+
+
+// async function login(event) {
+//     event.preventDefault()
+//     const usernameInput = document.querySelector('#userMailInput')
+//     const username = usernameInput.value
+//     const userPasswordInput = document.querySelector('#userPasswordInput')
+//     const userPassword = userPasswordInput.value
+
+//     try {
+//         const result = await isUserExist(username, userPassword)
+//         console.log(result)
+//     } catch (error) {
+//         console.error(error.value)
+//     }
+//     return false
+// }
