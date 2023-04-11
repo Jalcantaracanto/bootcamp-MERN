@@ -44,17 +44,16 @@
 // 1
 
 async function login(event) {
-    await event.preventDefault()
-    const usernameInput = document.querySelector('#userMailInput');
-    const username = usernameInput.value;
-    const userPasswordInput = document.querySelector('#userPasswordInput');
-    const userPassword = userPasswordInput.value;
-
     try {
+        await event.preventDefault()
+        const usernameInput = document.querySelector('#userMailInput');
+        const username = usernameInput.value;
+        const userPasswordInput = document.querySelector('#userPasswordInput');
+        const userPassword = userPasswordInput.value;
         const result = await isUserExist(username, userPassword);
         console.log(result);
     } catch (error) {
-        console.error(error.value);
+        console.error(error);
     }
     return false
 }
@@ -96,7 +95,7 @@ function isUserExist(username, userPassword) {
 //         console.log(result)
 //         userMailInput = document.innerText = ""
 //     } catch (error) {
-//         console.error(error.value)
+//         console.error(error)
 //     }
 // })
 
