@@ -18,13 +18,13 @@ class BankAccount {
     }
 
     transferCredit(destination, amount) {
-        // Veo si cuenta esta activa
+        // // Veo si cuenta esta activa
         if (!this.isActivate) {
             console.log("No se puede transferir de una cuenta inactiva")
             return;
         }
 
-        // Reviso si el balance de la cuenta es mayor a lo ingresado
+        // // Reviso si el balance de la cuenta es mayor a lo ingresado
         if (this.saldo < amount) {
             console.log("saldo insuficiente")
             return;
@@ -33,7 +33,6 @@ class BankAccount {
         // Transferencia
         this.saldo -= amount
         destination.creditCharge(amount)
-
     }
 
     getCredit() {
