@@ -1,5 +1,5 @@
-import logo from "./logo.svg"
 import "./App.css"
+import "./App.test"
 
 function App() {
     return (
@@ -17,6 +17,10 @@ function App() {
             <body></body>
         </div>
     )
+}
+
+function Component(){
+    return Component
 }
 
 export default App
