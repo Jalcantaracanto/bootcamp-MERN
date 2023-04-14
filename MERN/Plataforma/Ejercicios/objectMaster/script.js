@@ -27,7 +27,7 @@ const pokemon = Object.freeze([
 //Nombres que comiencen con la letra "B" 
 // const bListPkmn = pokemon.filter( p => p.name[0] === "B" );
 
-// //Matriz de solo los identificadores
+//Matriz de solo los identificadores
 // const pkmnIds = pokemon.map( p => p.id )
 
 //Identificación es divisible por 3
