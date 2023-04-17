@@ -31,13 +31,13 @@ class Effect extends Card {
         if (target instanceof Unit) {
             if (this.stat === "resiliencia") {
                 // console.log(this.text)
-                if (this.text.includes('Aumentar')) {
-                    target.res = target.res += this.magnitud
+                if (this.text.includes("Aumentar")) {
+                    target.res += this.magnitud
                 } else {
-                    target.res = target.res -= this.magnitud
+                    target.res -= this.magnitud
                 }
             } else {
-                target.res = target.power += this.magnitud
+                target.power += this.magnitud
             }
         } else {
             throw new Error("El objetivo debe ser una Unidad!")

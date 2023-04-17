@@ -65,7 +65,7 @@ class CreditAccount extends BankAccount {
         this.creditCardLimit -= amount
         this.usedCredit += amount
     }
-}
+} 
 
 
 const account1 = new BankAccount('111111111-1', 'Zafrada', 1000000, 'Mi Dirección')
