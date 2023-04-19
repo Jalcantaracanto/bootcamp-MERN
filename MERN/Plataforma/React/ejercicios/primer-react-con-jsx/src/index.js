@@ -6,9 +6,29 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+    <h1>Hello Dojo!</h1> 
+    <h2>Things I need to do:</h2>
+    <div id="checklist">
+      <div className='check-item'>
+        <input type="checkbox"/>
+        <label>Learn React</label>
+      </div>
+      <div className='check-item'>
+        <input type="checkbox"/>
+        <label>Climb Mt. Everest</label>
+      </div>
+      <div className='check-item'>
+        <input type="checkbox"/>
+        <label>Run a marathon</label>
+      </div>
+      <div className='check-item'>
+        <input type="checkbox"/>
+        <label>Feed the dogs</label>
+      </div>
+    </div>
+    
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
