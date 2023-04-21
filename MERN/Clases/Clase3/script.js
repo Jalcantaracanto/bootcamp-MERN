@@ -182,10 +182,9 @@ SECCIÓN PROBLEMAS
 // 2 Arreglo con los nombres de cliente ordenados de mayor a menor por la suma TOTAL de los saldos de cada cliente en los bancos que participa.
 const sortClientsTotalBalances = () => {
     let clientNames = []
-
     
-    for (let i = 0; i < clients.length; i++) {
-        const client = clients[i]
+    clients.map((clients) => {
+        const client = clients
         const clientAccounts = accounts.filter((account) => account.clientId === client.id)
         // console.log(clientAccounts);
         const totalBalance = clientAccounts.reduce((valorAnterior, valorAcumulado) => {
@@ -193,7 +192,11 @@ const sortClientsTotalBalances = () => {
         }, 0)
         // console.log(totalBalance)
         clientNames[client.name] = totalBalance
-    }
+    })
+
+    // for (let i = 0; i < clients.length; i++) {
+        
+    // }
     // console.log(clientNames)
     // console.log(clientNames)
     // Object.key devuelve una matriz con los nombres de propiedades enumerable con clave de cadena
