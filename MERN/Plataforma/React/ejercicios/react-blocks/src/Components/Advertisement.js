@@ -1,14 +1,13 @@
-// import React, { Component } from "react"
+import React from "react"
+import styles from "./components.module.css"
 
-// class Advertisement extends Component {
 
+const Advertisement = () => {
+    return (
+        <div className={styles.advertisement}>
 
-//     render() {
+        </div>
+    )
+}
 
-//         return (
-            
-//         )
-//     }
-// }
-
-// export default Advertisement
+export default Advertisement

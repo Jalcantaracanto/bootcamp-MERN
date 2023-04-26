@@ -1,22 +1,22 @@
 import React from "react"
 import "./App.css"
 import Header from "./Components/Header"
-// import Navigation from "./Components/Navigation"
-// import Main from "./Components/Main.js"
-// import SubContents from "./Components/SubContents.js"
-// import Advertisement from "./Components/Advertisement.js"
+import Navigation from "./Components/Navigation"
+import Main from "./Components/Main.js"
+import SubContents from "./Components/SubContents.js"
+import Advertisement from "./Components/Advertisement.js"
 
 function App() {
     return (
-        <div className="app">
+        <div className="App">
             <Header />
-            {/* <Navigation />
+            <Navigation />
             <Main>
                 <SubContents />
                 <SubContents />
                 <SubContents />
                 <Advertisement />
-            </Main> */}
+            </Main>
         </div>
     )
 }

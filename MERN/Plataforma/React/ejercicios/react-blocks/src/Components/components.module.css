@@ -8,3 +8,31 @@
     width: 1000px;
     height: 100px;
 }
+
+.navigation {
+    background-color: rgb(73, 219, 255);
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+}
+
+.main {
+    background-color: red;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+}
+
+.subContents {
+    background-color: yellow;
+    width: 10px;
+    height: 30px;
+    display: inline-block;
+}
+
+.advertisement {
+    background-color: blueviolet;
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+}

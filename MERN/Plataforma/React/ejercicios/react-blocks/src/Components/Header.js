@@ -1,15 +1,12 @@
-import React, { Component } from "react"
-import styles from './components.module.css'
+import React from "react"
+import styles from "./components.module.css"
 
-class Header extends Component {
+const Header = () => {
+    return (
+        <div className={styles.header}>
 
-    render() {
-        return (
-            <div className={styles.header}>
-                <p>hola</p>
-            </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default Header

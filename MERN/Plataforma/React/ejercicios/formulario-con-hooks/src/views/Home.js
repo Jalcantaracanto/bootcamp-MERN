@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Form from "../components/Form"
-import Results from "../components/Results"
+// import Results from "../components/Results"
 
 const Home = () => {
     const [state, setState] = useState({
@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <div className="main-container">
             <Form inputs={state} setInputs={setState} />
-            <Results firstName={state.firstName} lastName={state.lastName} email={state.email} password={state.password} confirmPassword={state.confirmPassword} />
+            {/* <Results firstName={state.firstName} lastName={state.lastName} email={state.email} password={state.password} confirmPassword={state.confirmPassword} /> */}
         </div>
     )
 }

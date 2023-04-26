@@ -1,14 +1,13 @@
-// import React, { Component } from "react"
+import React from "react"
+import styles from "./components.module.css"
 
-// class Navigation extends Component {
 
+const Navigation = () => {
+    return (
+        <div className={styles.navigation}>
 
-//     render() {
+        </div>
+    )
+}
 
-//         return (
-            
-//         )
-//     }
-// }
-
-// export default Navigation
+export default Navigation

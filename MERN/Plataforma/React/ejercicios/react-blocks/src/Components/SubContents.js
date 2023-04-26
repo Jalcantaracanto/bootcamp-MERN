@@ -1,14 +1,13 @@
-// import React, { Component } from "react"
+import React from "react"
+import styles from "./components.module.css"
 
-// class SubContents extends Component {
 
+const SubContents = () => {
+    return (
+        <div className={styles.subContents}>
 
-//     render() {
+        </div>
+    )
+}
 
-//         return (
-            
-//         )
-//     }
-// }
-
-// export default SubContents
+export default SubContents
