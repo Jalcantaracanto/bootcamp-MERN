@@ -10,26 +10,26 @@ const Form = (props) => {
         })
     }
     return (
-        <form action="">
+        <form>
             <div className="form-group">
                 <label htmlFor="firstName">First Name</label>
-                <input onChange={onChange} type="text" name="firstName " />
+                <input type="text" name="firstName" onChange={onChange} />
             </div>
             <div className="form-group">
                 <label htmlFor="lastName">Last Name</label>
-                <input onChange={onChange} type="text" name="lastName " />
+                <input type="text" name="lastName " onChange={onChange} />
             </div>
             <div className="form-group">
                 <label htmlFor="email">Email</label>
-                <input onChange={onChange} type="text" name="email " />
+                <input type="text" name="email " onChange={onChange} />
             </div>
             <div className="form-group">
                 <label htmlFor="password">Password</label>
-                <input onChange={onChange} type="password" name="password " />
+                <input type="password" name="password " onChange={onChange} />
             </div>
             <div className="form-group">
                 <label htmlFor="confirmPassword">Confirm Password</label>
-                <input onChange={onChange} type="password" name="confirmPassword " />
+                <input type="password" name="confirmPassword " onChange={onChange} />
             </div>
         </form>
     )
