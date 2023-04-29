@@ -39,7 +39,7 @@ const Home = () => {
     return (
         <div>
             <h1>Registro</h1>
-            <Form userName={userInfo.userName} email={userInfo.email} address={userInfo.address} handleChange={handleChange} />
+            <Form userName={userInfo.userName} email={userInfo.email} address={userInfo.address} />
             <ProfileView userName={userInfo.userName} email={userInfo.email} address={userInfo.address} /> {/*States -> Las variables que necesita un componente para ser utilizado */}
         </div>
     )
