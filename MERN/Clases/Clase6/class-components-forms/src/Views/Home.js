@@ -13,21 +13,6 @@ const Home = () => {
         const { target } = event
         console.log(target.value)
 
-        switch (target.name) {
-            case "userName":
-                event.target.value > 0 && event.target.value.length < 2 ? setUserInfo ("Usuario debe tener al menos 2 Caracteres") : setUserInfo("")
-                break
-
-            case "email":
-                break
-
-            case "address":
-                break
-
-            default:
-                break
-        }
-
         setUserInfo({
             ...userInfo,
             [target.name]: target.value,
