@@ -6,7 +6,7 @@ const Boton = ({ texto, id }) => {
     const filtro = content.filter((content, index) => index === id)
 
     const onClickHandler  = (e, value) => {
-        console.log(value)
+        console.log(e)
         return <>{filtro}</>
     }
 

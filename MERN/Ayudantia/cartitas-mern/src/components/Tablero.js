@@ -72,20 +72,32 @@ const misPersonajes = [
 ]
 
 class Tablero extends Component {
+
+    const [misCartasRandom, setMisCartasRandom] = useState([])
+    
     render() {
         /* Acceder a un objeto aleatorio del array  */
-        var misTresCartasRandomSinRepetir = []
-        while (misTresCartasRandomSinRepetir.length < 3) {
-            const cartaRandom = misPersonajes[Math.floor(Math.random() * misPersonajes.length)]
-            if (!misTresCartasRandomSinRepetir.includes(cartaRandom)) misTresCartasRandomSinRepetir.push(cartaRandom)
+        var misTresPosicionesSinRepetior = []
+
+        while (misTresPosicionesSinRepetior.lenght < 3) {
+            const posicionRandom = Math.floor(Math.random() * misPersonajes.length)
+            if (!misTresPosicionesSinRepetior.includes(posicionRandom)) misTresPosicionesSinRepetior.push(posicionRandom)
         }
+        // while (misTresCartasRandomSinRepetir.length < 3) {
+        //     const cartaRandom = misPersonajes[Math.floor(Math.random() * misPersonajes.length)]
+        //     if (!misTresCartasRandomSinRepetir.includes(cartaRandom)) misTresCartasRandomSinRepetir.push(cartaRandom)
+        // }
         return (
             <div className="divTablero">
                 <div>
                     <h2>Tablero de Cartas</h2>
                 </div>
                 <div>
-                    {misTresCartasRandomSinRepetir.map((unaCartaRandom, index) => <Carta nombre={unaCartaRandom.name} imagen={unaCartaRandom.img} puntos={unaCartaRandom.rating} key={index}/>)}
+                    {misPersonajes
+                        .filter((unPersonaje, index) => misTresPosicionesSinRepetior.includes(index))
+                        .map((unaCartaRandom, index) => (
+                            <Carta nombre={unaCartaRandom.name} imagen={unaCartaRandom.img} puntos={unaCartaRandom.rating} key={index} />
+                        ))}
                 </div>
             </div>
         )
