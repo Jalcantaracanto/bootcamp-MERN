@@ -1,18 +1,19 @@
 import React, { useState } from "react"
-import "./Pokemon.css"
+import './Pokemon.css'
+import axios from 'axios'
 
 const Pokemon = () => {
     const [pokemon, setPokemon] = useState([])
 
     const handleClick = async () => {
-        try {
-            const response = await fetch("https://pokeapi.co/api/v2/pokemon")
-            const pokemones = await response.json()
-            setPokemon(pokemones.results)
-            console.log(pokemones)
-        } catch (e) {
+        try{
+            const response = await axios.get("https://pokeapi.co/api/v2/pokemon")
+            setPokemon(response.data.results)
+            console.log(response)
+        }catch(e){
             console.log(e)
         }
+
     }
 
     return (
