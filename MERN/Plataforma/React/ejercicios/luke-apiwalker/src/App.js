@@ -1,10 +1,10 @@
-import SearchFor from './components/SearchFor';
 import './App.css';
+import { PrincipalRoute } from './routes/PrincipalRoute';
 
 function App() {
   return (
     <div className="App">
-      <SearchFor/>
+      <PrincipalRoute/>
     </div>
   );
 }
