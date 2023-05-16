@@ -1,3 +1,4 @@
+
 Cree una base de datos llamada 'my_first_db'.
 	use my_first_db
 
