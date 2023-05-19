@@ -49,33 +49,3 @@ app.get("/api/user/company", (req, res) => {
 });
 
 app.listen( port, () => console.log(`Listening on port: ${port}`) );
-
-// const createUser = () =>{
-//     const user = {
-//         _id: faker.datatype._id(),
-//         firstName: faker.internet.firstName(),
-//         lastName: faker.internet.lastName(),
-//         phoneNumber: faker.internet.phoneNumber(),
-//         email: faker.internet.email(),
-//         password: faker.internet.password(),
-//     }
-//     return user
-// }
-
-// const createCompany = () =>{
-//     const user = {
-//         _id: faker.datatype._id(),
-//         Name: faker.internet.Name(),
-//         address: {
-//             street: faker.address.street(),
-//             city: faker.address.city(),
-//             state: faker.address.state(),
-//             zipCode: faker.address.zipCode(),
-//             country: faker.address.country()
-//         }
-//     }
-//     return user
-// }
-
-// console.log(createUser())
-// console.log(createCompany())
