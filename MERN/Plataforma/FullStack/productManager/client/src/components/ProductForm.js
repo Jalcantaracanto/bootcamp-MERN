@@ -46,6 +46,7 @@
 
 import React, { useState } from "react"
 import axios from "axios"
+import styles from "./ProductForm.module.css"
 
 export const ProductForm = () => {
     const [product, setProduct] = useState({
@@ -85,21 +86,23 @@ export const ProductForm = () => {
     }
 
     return (
-        <form onSubmit={onSubmitHandle}>
-            <h1>Product Manager</h1>
-            <div>
-                <label htmlFor="title">Title</label>
-                <input type="text" name="title" value={title} onChange={handleInputChange} />
-            </div>
-            <div>
-                <label htmlFor="price">Price</label>
-                <input type="text" name="price" value={price} onChange={handleInputChange} />
-            </div>
-            <div>
-                <label htmlFor="description">Description</label>
-                <input type="text" name="description" value={description} onChange={handleInputChange} />
-            </div>
-            <input type="submit" value="Create" />
-        </form>
+        <div className={styles.main}>
+            <form onSubmit={onSubmitHandle}>
+                <h1>Product Manager</h1>
+                <div className={styles.box}>
+                    <label htmlFor="title">Title</label>
+                    <input type="text" name="title" value={title} onChange={handleInputChange} />
+                </div>
+                <div className={styles.box}>
+                    <label htmlFor="price">Price</label>
+                    <input type="text" name="price" value={price} onChange={handleInputChange} />
+                </div>
+                <div className={styles.box}>
+                    <label htmlFor="description">Description</label>
+                    <input type="text" name="description" value={description} onChange={handleInputChange} />
+                </div>
+                <input type="submit" value="Create" className={styles.btn}/>
+            </form>
+        </div>
     )
 }
